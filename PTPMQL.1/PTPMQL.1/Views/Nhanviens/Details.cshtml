@@ -1,0 +1,43 @@
+﻿@model PTPMQL._1.Models.Nhanvien
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Nhanvien</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NhanvienID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NhanvienID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vitri)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vitri)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FullName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CCCD }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

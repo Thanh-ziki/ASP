@@ -1,0 +1,52 @@
+﻿@model IEnumerable<PTPMQL._1.Models.QuanLyThuVien>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Danh sách các loại sách có trong thư viện</h2>
+
+<p>
+    @Html.ActionLink("Tạo mới loại sách", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MaLoaiSach)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TenSach)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaSach)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SoLuong)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.MaLoaiSach)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.TenSach)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.MaSach)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.SoLuong)
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.MaSach }) |
+        @Html.ActionLink("Details", "Details", new { id = item.MaSach }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.MaSach })
+    </td>
+</tr>
+}
+
+</table>

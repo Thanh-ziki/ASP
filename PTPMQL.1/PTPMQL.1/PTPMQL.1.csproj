@@ -8,12 +8,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{4009F79E-2200-4564-B3B1-A8F900854792}</ProjectGuid>
+    <ProjectGuid>{D4BB9DBB-766C-4680-81D9-991428C9C5FF}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BTL_SQL</RootNamespace>
-    <AssemblyName>BTL-SQL</AssemblyName>
+    <RootNamespace>PTPMQL._1</RootNamespace>
+    <AssemblyName>PTPMQL.1</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
@@ -128,36 +128,67 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\AccountsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ShopPetsController.cs" />
-    <Compile Include="Controllers\StudentsController.cs" />
+    <Compile Include="Controllers\KhachHangController.cs" />
+    <Compile Include="Controllers\NhanviensController.cs" />
+    <Compile Include="Controllers\PersonsController.cs" />
+    <Compile Include="Controllers\QuanLyThuViensController.cs" />
+    <Compile Include="Controllers\studentsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202104090331125_Create_Table_Accounts.cs" />
-    <Compile Include="Migrations\202104090331125_Create_Table_Accounts.Designer.cs">
-      <DependentUpon>202104090331125_Create_Table_Accounts.cs</DependentUpon>
+    <Compile Include="Migrations\202103080646354_Create_Table_Accounts.cs" />
+    <Compile Include="Migrations\202103080646354_Create_Table_Accounts.Designer.cs">
+      <DependentUpon>202103080646354_Create_Table_Accounts.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202104090343255_Create_Table_Students.cs" />
-    <Compile Include="Migrations\202104090343255_Create_Table_Students.Designer.cs">
-      <DependentUpon>202104090343255_Create_Table_Students.cs</DependentUpon>
+    <Compile Include="Migrations\202103080701005_Create_Table_Students.cs" />
+    <Compile Include="Migrations\202103080701005_Create_Table_Students.Designer.cs">
+      <DependentUpon>202103080701005_Create_Table_Students.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202104090526461_Create_Table_ShopPets.cs" />
-    <Compile Include="Migrations\202104090526461_Create_Table_ShopPets.Designer.cs">
-      <DependentUpon>202104090526461_Create_Table_ShopPets.cs</DependentUpon>
+    <Compile Include="Migrations\202103080710193_Add_Column_Student_Address.cs" />
+    <Compile Include="Migrations\202103080710193_Add_Column_Student_Address.Designer.cs">
+      <DependentUpon>202103080710193_Add_Column_Student_Address.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202104090653075_Create_Table_Persons.cs" />
-    <Compile Include="Migrations\202104090653075_Create_Table_Persons.Designer.cs">
-      <DependentUpon>202104090653075_Create_Table_Persons.cs</DependentUpon>
+    <Compile Include="Migrations\202103080715305_Alter_Column_Student_Address_Age.cs" />
+    <Compile Include="Migrations\202103080715305_Alter_Column_Student_Address_Age.Designer.cs">
+      <DependentUpon>202103080715305_Alter_Column_Student_Address_Age.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103081507140_Create_Table_KhachHang.cs" />
+    <Compile Include="Migrations\202103081507140_Create_Table_KhachHang.Designer.cs">
+      <DependentUpon>202103081507140_Create_Table_KhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103081553273_Alter_Table_KhachHang_KhachHangID.cs" />
+    <Compile Include="Migrations\202103081553273_Alter_Table_KhachHang_KhachHangID.Designer.cs">
+      <DependentUpon>202103081553273_Alter_Table_KhachHang_KhachHangID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103090252230_Create_Table_QuanLyThuVien.cs" />
+    <Compile Include="Migrations\202103090252230_Create_Table_QuanLyThuVien.Designer.cs">
+      <DependentUpon>202103090252230_Create_Table_QuanLyThuVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104060234585_Create_Table_Studens.cs" />
+    <Compile Include="Migrations\202104060234585_Create_Table_Studens.Designer.cs">
+      <DependentUpon>202104060234585_Create_Table_Studens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104060317595_Create_Table_Persons.cs" />
+    <Compile Include="Migrations\202104060317595_Create_Table_Persons.Designer.cs">
+      <DependentUpon>202104060317595_Create_Table_Persons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104060323049_Create_Table_Student.cs" />
+    <Compile Include="Migrations\202104060323049_Create_Table_Student.Designer.cs">
+      <DependentUpon>202104060323049_Create_Table_Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104060342209_Create_Table_Nhanvien.cs" />
+    <Compile Include="Migrations\202104060342209_Create_Table_Nhanvien.Designer.cs">
+      <DependentUpon>202104060342209_Create_Table_Nhanvien.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
-    <Compile Include="Models\Classes.cs" />
     <Compile Include="Models\DemoDbContext.cs" />
+    <Compile Include="Models\KhachHang.cs" />
+    <Compile Include="Models\Nhanvien.cs" />
     <Compile Include="Models\Person.cs" />
-    <Compile Include="Models\ShopPet.cs" />
-    <Compile Include="Models\Student.cs" />
+    <Compile Include="Models\QuanLyThuVien.cs" />
+    <Compile Include="Models\student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -201,19 +232,32 @@
     <Content Include="Views\Students\Details.cshtml" />
     <Content Include="Views\Students\Edit.cshtml" />
     <Content Include="Views\Students\Index.cshtml" />
-    <Content Include="Views\Accounts\Create.cshtml" />
-    <Content Include="Views\Accounts\Delete.cshtml" />
-    <Content Include="Views\Accounts\Details.cshtml" />
-    <Content Include="Views\Accounts\Edit.cshtml" />
-    <Content Include="Views\Accounts\Index.cshtml" />
-    <Content Include="Views\ShopPets\Create.cshtml" />
-    <Content Include="Views\ShopPets\Delete.cshtml" />
-    <Content Include="Views\ShopPets\Details.cshtml" />
-    <Content Include="Views\ShopPets\Edit.cshtml" />
-    <Content Include="Views\ShopPets\Index.cshtml" />
+    <Content Include="Views\KhachHang\Index.cshtml" />
+    <Content Include="Views\KhachHang\Create.cshtml" />
+    <Content Include="Views\QuanLyThuViens\Create.cshtml" />
+    <Content Include="Views\QuanLyThuViens\Delete.cshtml" />
+    <Content Include="Views\QuanLyThuViens\Details.cshtml" />
+    <Content Include="Views\QuanLyThuViens\Edit.cshtml" />
+    <Content Include="Views\QuanLyThuViens\Index.cshtml" />
+    <Content Include="Views\Students1\Create.cshtml" />
+    <Content Include="Views\Students1\Delete.cshtml" />
+    <Content Include="Views\Students1\Details.cshtml" />
+    <Content Include="Views\Students1\Edit.cshtml" />
+    <Content Include="Views\Students1\Index.cshtml" />
+    <Content Include="Views\Persons\Create.cshtml" />
+    <Content Include="Views\Persons\Delete.cshtml" />
+    <Content Include="Views\Persons\Details.cshtml" />
+    <Content Include="Views\Persons\Edit.cshtml" />
+    <Content Include="Views\Persons\Index.cshtml" />
+    <Content Include="Views\Nhanviens\Create.cshtml" />
+    <Content Include="Views\Nhanviens\Delete.cshtml" />
+    <Content Include="Views\Nhanviens\Details.cshtml" />
+    <Content Include="Views\Nhanviens\Edit.cshtml" />
+    <Content Include="Views\Nhanviens\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\QuanLyThuVien\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -229,17 +273,38 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202104090331125_Create_Table_Accounts.resx">
-      <DependentUpon>202104090331125_Create_Table_Accounts.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202103080646354_Create_Table_Accounts.resx">
+      <DependentUpon>202103080646354_Create_Table_Accounts.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202104090343255_Create_Table_Students.resx">
-      <DependentUpon>202104090343255_Create_Table_Students.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202103080701005_Create_Table_Students.resx">
+      <DependentUpon>202103080701005_Create_Table_Students.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202104090526461_Create_Table_ShopPets.resx">
-      <DependentUpon>202104090526461_Create_Table_ShopPets.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202103080710193_Add_Column_Student_Address.resx">
+      <DependentUpon>202103080710193_Add_Column_Student_Address.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202104090653075_Create_Table_Persons.resx">
-      <DependentUpon>202104090653075_Create_Table_Persons.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202103080715305_Alter_Column_Student_Address_Age.resx">
+      <DependentUpon>202103080715305_Alter_Column_Student_Address_Age.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103081507140_Create_Table_KhachHang.resx">
+      <DependentUpon>202103081507140_Create_Table_KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103081553273_Alter_Table_KhachHang_KhachHangID.resx">
+      <DependentUpon>202103081553273_Alter_Table_KhachHang_KhachHangID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103090252230_Create_Table_QuanLyThuVien.resx">
+      <DependentUpon>202103090252230_Create_Table_QuanLyThuVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104060234585_Create_Table_Studens.resx">
+      <DependentUpon>202104060234585_Create_Table_Studens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104060317595_Create_Table_Persons.resx">
+      <DependentUpon>202104060317595_Create_Table_Persons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104060323049_Create_Table_Student.resx">
+      <DependentUpon>202104060323049_Create_Table_Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104060342209_Create_Table_Nhanvien.resx">
+      <DependentUpon>202104060342209_Create_Table_Nhanvien.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
@@ -258,9 +323,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>53308</DevelopmentServerPort>
+          <DevelopmentServerPort>58005</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:53308/</IISUrl>
+          <IISUrl>http://localhost:58005/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
