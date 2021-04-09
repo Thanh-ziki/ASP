@@ -16,6 +16,7 @@ namespace BTL_SQL.Models
         public virtual DbSet<ShopPet> ShopPets { get; set; }
         public virtual DbSet<Student> Students { get; set; }
         public virtual DbSet<Person> Persons { get; set; }
+        public virtual DbSet<NotDay> NotDays { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Account>()

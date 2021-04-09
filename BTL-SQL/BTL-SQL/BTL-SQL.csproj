@@ -130,6 +130,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NotDaysController.cs" />
+    <Compile Include="Controllers\PeopleController.cs" />
     <Compile Include="Controllers\ShopPetsController.cs" />
     <Compile Include="Controllers\StudentsController.cs" />
     <Compile Include="Global.asax.cs">
@@ -147,16 +149,22 @@
     <Compile Include="Migrations\202104090526461_Create_Table_ShopPets.Designer.cs">
       <DependentUpon>202104090526461_Create_Table_ShopPets.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202104090653075_Create_Table_Persons.cs" />
-    <Compile Include="Migrations\202104090653075_Create_Table_Persons.Designer.cs">
-      <DependentUpon>202104090653075_Create_Table_Persons.cs</DependentUpon>
+    <Compile Include="Migrations\202104090723332_Create_Table_Person.cs" />
+    <Compile Include="Migrations\202104090723332_Create_Table_Person.Designer.cs">
+      <DependentUpon>202104090723332_Create_Table_Person.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104091313348_Create_Table_NotDay.cs" />
+    <Compile Include="Migrations\202104091313348_Create_Table_NotDay.Designer.cs">
+      <DependentUpon>202104091313348_Create_Table_NotDay.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\Classes.cs" />
     <Compile Include="Models\DemoDbContext.cs" />
+    <Compile Include="Models\NotDay.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\ShopPet.cs" />
+    <Compile Include="Models\SomeOne.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -211,6 +219,16 @@
     <Content Include="Views\ShopPets\Details.cshtml" />
     <Content Include="Views\ShopPets\Edit.cshtml" />
     <Content Include="Views\ShopPets\Index.cshtml" />
+    <Content Include="Views\People\Create.cshtml" />
+    <Content Include="Views\People\Delete.cshtml" />
+    <Content Include="Views\People\Details.cshtml" />
+    <Content Include="Views\People\Edit.cshtml" />
+    <Content Include="Views\People\Index.cshtml" />
+    <Content Include="Views\NotDays\Create.cshtml" />
+    <Content Include="Views\NotDays\Delete.cshtml" />
+    <Content Include="Views\NotDays\Details.cshtml" />
+    <Content Include="Views\NotDays\Edit.cshtml" />
+    <Content Include="Views\NotDays\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -238,8 +256,11 @@
     <EmbeddedResource Include="Migrations\202104090526461_Create_Table_ShopPets.resx">
       <DependentUpon>202104090526461_Create_Table_ShopPets.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202104090653075_Create_Table_Persons.resx">
-      <DependentUpon>202104090653075_Create_Table_Persons.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202104090723332_Create_Table_Person.resx">
+      <DependentUpon>202104090723332_Create_Table_Person.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104091313348_Create_Table_NotDay.resx">
+      <DependentUpon>202104091313348_Create_Table_NotDay.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
